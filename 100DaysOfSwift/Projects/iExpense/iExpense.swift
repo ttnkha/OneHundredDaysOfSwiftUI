@@ -73,8 +73,15 @@ struct iExpense: View {
                     showingAddExpense = true
                 }
             }
-            .sheet(isPresented: $showingAddExpense) {
+//            .sheet(isPresented: $showingAddExpense) {
+//                AddView(expenses: expenses)
+//            }
+            NavigationLink("") {
+                EmptyView()
+            }
+            .navigationDestination(isPresented: $showingAddExpense) {
                 AddView(expenses: expenses)
+                    .navigationBarBackButtonHidden()
             }
         }
     }
