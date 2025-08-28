@@ -39,6 +39,7 @@ extension ContentView {
             case .iexpense: iExpense()
             case .moonshot: Moonshot()
             case .navigation: Navigation()
+            case .cupcakeCorner: CupcakeCorner()
         }
     }
 }
