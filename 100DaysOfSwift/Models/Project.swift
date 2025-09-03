@@ -20,4 +20,5 @@ enum Project: String, CaseIterable {
     case moonshot = "Moonshot"
     case navigation = "Navigation"
     case cupcakeCorner = "Cupcake Corner"
+    case bookworm = "Bookworm"
 }

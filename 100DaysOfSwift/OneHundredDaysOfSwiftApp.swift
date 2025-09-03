@@ -5,6 +5,7 @@
 //  Created by Kha, Tran Thuy Nha on 30/6/25.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct OneHundredDaysOfSwiftApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Book.self)
     }
 }

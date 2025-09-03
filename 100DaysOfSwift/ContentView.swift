@@ -13,14 +13,14 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List(projects, id: \.rawValue) { project in
-                NavigationLink {
-                    destinationView(for: project)
-                } label: {
+                NavigationLink(value: project) {
                     Label(project.rawValue, systemImage: "folder")
                 }
-                
             }
             .navigationTitle("Projects")
+            .navigationDestination(for: Project.self) { project in
+                destinationView(for: project)
+            }
         }
     }
 }
@@ -40,6 +40,7 @@ extension ContentView {
             case .moonshot: Moonshot()
             case .navigation: Navigation()
             case .cupcakeCorner: CupcakeCorner()
+            case .bookworm: Bookworm()
         }
     }
 }
