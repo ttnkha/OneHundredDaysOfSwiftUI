@@ -15,5 +15,7 @@ struct OneHundredDaysOfSwiftApp: App {
             ContentView()
         }
         .modelContainer(for: Book.self)
+        .modelContainer(for: User.self)
+        .modelContainer(for: ExpenseItem.self)
     }
 }
