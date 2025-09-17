@@ -22,4 +22,6 @@ enum Project: String, CaseIterable {
     case cupcakeCorner = "Cupcake Corner"
     case bookworm = "Bookworm"
     case swiftDataProject = "SwiftData Project"
+    case instafilter = "Instafilter"
+    case bucketList = "Bucket List"
 }

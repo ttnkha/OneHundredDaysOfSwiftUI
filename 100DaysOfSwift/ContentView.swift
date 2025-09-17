@@ -42,6 +42,8 @@ extension ContentView {
             case .cupcakeCorner: CupcakeCorner()
             case .bookworm: Bookworm()
             case .swiftDataProject: SwiftDataProject()
+            case .instafilter: Instafilter()
+            case .bucketList: BucketList()
         }
     }
 }
