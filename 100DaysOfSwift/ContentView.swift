@@ -44,6 +44,7 @@ extension ContentView {
             case .swiftDataProject: SwiftDataProject()
             case .instafilter: Instafilter()
             case .bucketList: BucketList()
+            case .hotProspects: HotProspects()
         }
     }
 }

@@ -24,4 +24,5 @@ enum Project: String, CaseIterable {
     case swiftDataProject = "SwiftData Project"
     case instafilter = "Instafilter"
     case bucketList = "Bucket List"
+    case hotProspects = "Host Prospects"
 }

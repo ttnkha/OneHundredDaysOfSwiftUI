@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E173AE32E7D470A00457405 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 1E173AE22E7D470A00457405 /* SamplePackage */; };
+		1E173AEC2E7D53B900457405 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 1E173AEB2E7D53B900457405 /* CodeScanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1E5B66172E38743D0087D431 /* 100DaysOfSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100DaysOfSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E173AEC2E7D53B900457405 /* CodeScanner in Frameworks */,
+				1E173AE32E7D470A00457405 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +64,8 @@
 			);
 			name = 100DaysOfSwift;
 			packageProductDependencies = (
+				1E173AE22E7D470A00457405 /* SamplePackage */,
+				1E173AEB2E7D53B900457405 /* CodeScanner */,
 			);
 			productName = 100DaysOfSwift;
 			productReference = 1E5B66172E38743D0087D431 /* 100DaysOfSwift.app */;
@@ -86,6 +95,10 @@
 			);
 			mainGroup = 1E4A10982E1280AE00C5AFC2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1E173AE12E7D470A00457405 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				1E173AEA2E7D53B900457405 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1E4A10982E1280AE00C5AFC2;
 			projectDirPath = "";
@@ -247,7 +260,9 @@
 				DEVELOPMENT_TEAM = XVXJYMD9J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -277,7 +292,9 @@
 				DEVELOPMENT_TEAM = XVXJYMD9J2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,6 +335,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E173AE12E7D470A00457405 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1E173AEA2E7D53B900457405 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E173AE22E7D470A00457405 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E173AE12E7D470A00457405 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+		1E173AEB2E7D53B900457405 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E173AEA2E7D53B900457405 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E4A10992E1280AE00C5AFC2 /* Project object */;
 }

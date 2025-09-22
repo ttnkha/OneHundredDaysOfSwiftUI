@@ -17,5 +17,6 @@ struct OneHundredDaysOfSwiftApp: App {
         .modelContainer(for: Book.self)
         .modelContainer(for: User.self)
         .modelContainer(for: ExpenseItem.self)
+        .modelContainer(for: Prospect.self)
     }
 }
