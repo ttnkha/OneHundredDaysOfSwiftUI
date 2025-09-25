@@ -45,6 +45,8 @@ extension ContentView {
             case .instafilter: Instafilter()
             case .bucketList: BucketList()
             case .hotProspects: HotProspects()
+            case .flashzilla: Flashzilla()
+            default: Text("Not yet implemented")
         }
     }
 }

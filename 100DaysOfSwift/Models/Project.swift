@@ -25,4 +25,5 @@ enum Project: String, CaseIterable {
     case instafilter = "Instafilter"
     case bucketList = "Bucket List"
     case hotProspects = "Host Prospects"
+    case flashzilla = "Flashzilla"
 }
